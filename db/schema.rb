@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_24_133954) do
+ActiveRecord::Schema.define(version: 2018_05_28_115121) do
 
   create_table "noticia", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "titulo", limit: 100
@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 2018_05_24_133954) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "token"
+    t.index ["token"], name: "index_users_on_token", unique: true
   end
 
   add_foreign_key "posts", "users"

@@ -80,6 +80,9 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    dbi (0.4.5)
+      deprecated (= 2.0.1)
+    deprecated (2.0.1)
     erubi (1.7.1)
     execjs (2.7.0)
     faker (1.8.7)
@@ -101,6 +104,7 @@ GEM
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
+    magic_multi_connections (1.2.1)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     marcel (0.3.2)
@@ -121,6 +125,7 @@ GEM
     rack (2.0.5)
     rack-attack (5.2.0)
       rack
+    rack-cors (1.0.2)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
     rails (5.2.0)
@@ -210,12 +215,15 @@ DEPENDENCIES
   capybara (>= 2.15, < 4.0)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  dbi
   faker
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  magic_multi_connections (~> 1.2, >= 1.2.1)
   mysql2 (>= 0.4.4, < 0.6.0)
   puma (~> 3.11)
   rack-attack
+  rack-cors
   rails (~> 5.2.0)
   sass-rails (~> 5.0)
   selenium-webdriver
