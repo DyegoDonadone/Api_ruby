@@ -22,7 +22,7 @@ development:
   password: root
   database: news
 
-development_2:
+development_a:
   <<: *default
   username: root
   password: root
