@@ -27,7 +27,7 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem 'rack-cors'
 gem 'rack-attack'
 gem 'magic_multi_connections', '~> 1.2', '>= 1.2.1'
-
+gem 'rest-client'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -45,6 +45,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.7'
+  gem "autotest"
+  gem "factory_bot"
 end
 
 group :development do

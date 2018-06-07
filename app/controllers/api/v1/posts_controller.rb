@@ -5,7 +5,7 @@ module Api
 	        def index
 
             a = params[:id]
-            ActiveRecord::Base.establish_connection "#{Rails.env}#{a}".to_sym
+            ActiveRecord::Base.establish_connection"#{Rails.env}#{a}".to_sym
 
 					  @posts = Post.order('created_at DESC')
 
